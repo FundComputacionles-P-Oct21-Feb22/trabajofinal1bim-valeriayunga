@@ -1,0 +1,50 @@
+Problema 01 
+ //algoritmo
+1.Inicio
+//Entrada
+2.Se ingresar los ángulos A, B y C del triángulo
+//Procesos
+3.Especificar el tipo de triángulo ya sea rectángulo,obtusángulo, o acutángulo 
+  según la medida de cada uno de los ángulos ingresados, usando el condicional Si
+//salida
+4.Se presenta en pantalla el tipo de triángulo 
+5.Fin
+
+//miniespecificación
+
+1.Inicio
+2.tipo_ángulo, x(30)[{a-z},{A-Z},{BS}] <-- ""
+3.angulo_A, d [0, n]
+4.angulo_B, d [0, n]
+5.angulo_C, d [0, n]
+
+6.<<"Ingrese el ángulo A"
+7.>>angulo_A
+
+8.<<"Ingrese el ángulo B"
+9.>>angulo_B
+
+10.<<"Ingrese el ángulo A"
+11.>>angulo_B
+
+12.Si (angulo_A == 90) or (angulo_B == 90) or (angulo_B == 90) entonces
+13.	tipo_angulo <-- "rectángulo"
+
+14.De lo contrario
+15.	Si (angulo_A >90 and angulo_A < 180) or (angulo_B >90 and angulo_B < 180) or (angulo_C >90 and angulo_C < 180) entoces
+16.		tipo_angulo <-- "obtusángulo"
+
+17.	De lo contario
+18.		Si (angulo_A < 90) or (angulo_B < 90) or (angulo_B < 90) entonces
+19.			tipo_angulo <-- "acutángulo"
+20.		De lo contrario
+21.			<<"Angulo incorrecto"
+22.		Fin Si
+23.	Fin Si
+24.Fin si
+
+25.<<"El tipo de triángulo es:" + tipo_angulo
+
+26.Fin
+
+ 

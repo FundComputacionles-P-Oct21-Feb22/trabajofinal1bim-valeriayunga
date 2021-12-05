@@ -1,0 +1,56 @@
+Problema04
+//algoritmo
+
+1.Inicio
+//Entradas
+2.Se ingresan los 3 números
+
+//Procesos
+3.Se usa el condicional Si, para diferenciar el número mayor, y
+  para identificar si dor número son iguales.
+
+//Salida
+4.Se presenta en pantalla el número mayor
+5.Fin
+
+
+//miniespecificación 
+
+1.Inicio 
+
+2.numero1, i [0, n]
+3.numero2, i [0, n]
+4.numero3,i [0, n]
+5.mayor,i[0,n]
+
+6.<<"Ingresar el primer número"
+7.>>numero1
+
+8.<<"Ingresar el segundo número"
+9.>>numero2
+
+10.<<"Ingresar el tercer número"
+11.>>nuemro3
+
+12.Si (numero1 == numero2) or (numero1 == numero3) or (numero2 == numero3) entoces
+13.	<<"Valores incorrectos"
+
+14.Fin Si
+
+15.Si (numero1 > numero2) and (numero1>numero3)entoces
+16.	mayor = numero1
+
+17.De lo contrario
+18.	Si (numero2 > numero1) and (numero2>numero3)entoces
+19.		mayor = numero2
+
+20.	De lo contrario
+21.		Si (numero3 > numero1) and (numero3 >numero1)entoces
+22.			mayor = numero3
+23.		Fin Si
+24.	Fin Si
+25.Fin Si
+
+26.<<"El número mayor es:" mayor
+
+27.Fin

@@ -1,0 +1,84 @@
+Pregunta 02
+
+//algoritmo
+
+1.Inicio
+//Entrada
+2.Se ingresan la cantidad de trajas que el cliente desea comprar
+3.Se ingresan los tipos de porcentaje de descuento
+4.Se ingresa el precio estandar de los trajes
+
+// Proceso
+5.Se realiza la opreción necesaria para encontar el subtotal, 
+  la cual es mutiplicar la cantidda de trajes por el precio 
+  destandar de los trajes.
+
+6.Se procede a utilizar el condicional Si para clasificar la 
+  cantidad de trajes que el cliente desea comprar ya así poder 
+  asignarle el descuento correspondiente y el valor total a pagar
+
+7.Se realiza la la opreción necesaria para encontar el descuento, 
+  la cual es mutiplicar el porcentaje correspondiente por el 
+  subtotal y dividir el resultado entre 100
+
+8.Se realiza la la opreción necesaria para encontar el subtotal, 
+  la cual es restar el descuento al subtotal.
+
+//Salida
+
+9. Presentar en pantalla el subtotal, descuento y total apagar.
+
+10.Fin
+
+
+//miniespecificación
+
+1.Inicio
+
+2.cantidad, d [0, n]
+3.precio, d [0, n] <--10
+4.descuento, d [0, n]
+5.porcentaje1, d [0, n] <--20
+6.porcentaje2, d [0, n] <--25
+7.porcentaje3, d [0, n] <--40
+8.porcentaje4, d [0, n] <--50
+9.subtotal, d [0, n]
+10.valorTotal, d [0, n]
+
+11.<<"Ingrese el número de tajes que se comprarán"
+12.>> cantidad
+
+13.subtotal <-- (cantidad * precio)
+
+14.Si (cantidad == 1) entonces
+15.	descuento <-- (porcentaje1 * subtotal) / 100
+16.	valorTotal <-- subtotal - descuento
+
+17.De lo contrario
+18.	Si (cantidad == 2) entonces
+19.		descuento <-- (porcentaje2 * subtotal) / 100
+20.		valorTotal <-- subtotal - descuento
+
+21.	De lo contarrio
+22.		Si (cantidad == 3) entonces
+23.			descuento <-- (porcentaje3 * subtotal) / 100
+24.			valorTotal <-- subtotal - descuento
+
+25.		De lo contario
+26.			Si (cantidad > 3) entonces
+27.				descuento <-- (porcentaje4 * subtotal) / 100
+28.				valorTotal <-- subtotal - descuento
+
+29.			De lo contrario
+30.				<<"Valor erroneo"
+31.			Fin Si
+32.		Fin Si
+33.	Fin Si
+34.Fin Si
+
+35.<<"El subtotal por pagar es: " + subtotal
+36.<<"El descuento es :" + descuento
+37.<<"El total a pagar es: " + valorTotal
+
+
+
