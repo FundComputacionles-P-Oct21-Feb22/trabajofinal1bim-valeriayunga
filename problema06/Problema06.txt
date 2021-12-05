@@ -1,0 +1,40 @@
+Problema06
+//algoritmo 
+
+roblema04
+//algoritmo
+
+1.Inicio
+//Entradas
+2.Se registra el limite, el valor inicial del numerador, denominador,
+  la suma y la cadena
+
+//Procesos
+3.Se usa el bucle Haga_Hasta para imprimir la serie y que se sume 
+  gradiualmente cada división, haciendo la suma sea igual a el valor 
+  inicial de la suma más la gracción correspondiente 
+
+//Salida
+4.Se presenta en pantalla la serie final junto a la suma se la misma
+5.Fin
+
+
+//miniespecificación
+
+1.Inicio
+2.limite,d [0, n] <-- 100
+3.numerador,d [0, n] <-- 1
+4.denominador,d [0, n] <-- 2
+5.suma,d [0, n] <-- 0
+6.cadena ,  x(1000)[{0-9},{-,+, BS, /}] <-- "1 "
+
+7. Haga_Hasta
+8.	suma <-- suma + numerador / denominador 
+9.	cadena <-- cadena + "+" numerador + " " + "/" +" "+ denominador
+10.	denominador <-- denominador + 1  
+
+11. Fin Haga_Hasta (denominador >= 100)
+
+12. <<"Serie :"+ cadena
+13.<<"Suma total de la serie:"+ suma
+14. Fin

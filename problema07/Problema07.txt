@@ -1,0 +1,25 @@
+Pregunta07
+
+1.Inicio
+
+2.par_ingresado, d[0-n]
+3.conatador, d[0-n] <--2
+4.numero, d[0-n] <--2
+5.<<"Ingrese un número par mayor a 2"
+6.>>par_ingresado
+
+
+7.Si (par_ingresado < 2) entonces
+8.		<<"valor erroneo"
+
+9.De lo contrario
+10.	Mientas (numero < par_ingresado)
+
+11.		numero <-- numero + contador
+		
+
+12.	Fin Mientras
+13.Fin Si
+
+14.<<"La suma impar es" + numero
+15.Fin

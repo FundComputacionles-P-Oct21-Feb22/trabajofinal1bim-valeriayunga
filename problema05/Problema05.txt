@@ -1,0 +1,53 @@
+Problema05
+//algoritmo
+1.Inicio
+//Entradas
+2.Se ingresan los puntos x, y
+//Procesos
+3.Se usa el condicional Si, para diferenciar a que cuadrante pertenen
+  las coordenadas
+  
+//Salida
+4.Se presenta en pantalla el cuadrante al que pertenece la coordenada.
+5.Fin
+
+
+//miniespecificación 
+
+1.Inicio
+2.x, d[0, n]
+3.y, d[0, n]
+4.cuadrante, x(20)[{A-Z},{a-z},{BS}]
+
+5.<<"Ingresar el punto x"
+6.>>x
+
+7.<<"Ingresar el punto y"
+8.>>y
+
+9.Si (x >=0 and y >=0) entonces
+10.	cuadrante <-- "1er Cuadrante"
+
+11.De lo contrario
+12.	Si (x <=0 and y >=0) entonces
+13.		cuadrante <-- "2do Cuadrante"
+	
+14.	De lo contrario
+15.		Si (x <=0 and y <=0) entonces
+16.			cuadrante <-- "3er Cuadrante"
+
+17.		De lo contrario
+18.			Si (x >=0 and y <=0) entonces
+19.				cuadrante <-- "4to Cuadrante"
+			
+20.			De lo contrario
+21.				Si (x ==0 and y ==0) entonces
+22.					cuadrante <-- "no pertenece a ningún cuadrante"
+23.				Fin Si
+24.			Fin Si
+25.		Fin Si
+26.	Fin Si
+27.Fin Si
+
+28.<<"La cordenada:" +(+x +, +y+)+" está ubicada en el " + cuadrante
+29.Fin

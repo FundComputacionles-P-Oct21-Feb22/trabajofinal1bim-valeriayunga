@@ -3,16 +3,15 @@ Problema03
 1.Inicio
 
 2.nombre,  x(30)[{a-z},{A-Z},{BS}]
-3.tipo, d [0, n]
+3.tipo, i [0, n]
 4.horas , d [0, n]
 5.horas_extra, d[0, n]
 6.extra, d[0, n]
 7.cuota, d [0, n]
-8.suedo, d [0, n]
 9.subtotal, d [0, n]
 10.valorTotal, d [0, n]
 
-11.<<"Ingrese el nombre del cliente2
+11.<<"Ingrese el nombre del cliente"
 12.>>nombre
 
 13.<<Ingrese el tipo de cliente"
@@ -21,37 +20,37 @@ Problema03
 15.<<"Ingrese las horas trabajadas"
 16.>>horas
 
-17.<<"Ingrese la couta que se le paga por hora"
+17.<<"Ingrese la cuota que se le paga por hora"
 18.>>cuota
 
 19.<<"Ingrese las horas extra"
 20.>>horas_extra
 
-21.subtotal = hora *cuota
+21.subtotal <-- hora *cuota
 
 22.Si (tipo==1) entonces
 23.	cuota <-- cuota * 1.5
-24.	extra = cuota * horas_extra
+24.	extra <-- cuota * horas_extra
 25.	valorTotal= subtotal + extra
 
 26.De lo contrario
 27.	Si(tipo==2) entonces
 28.		cuota <-- cuota * 2
-29.		extra = cuota * horas_extra
-30.		valorTotal= subtotal + extra
+29.		extra <-- cuota * horas_extra
+30.		valorTotal <-- subtotal + extra
 
 31.	De lo contario
 32.		Si(tipo==3) entonces
 33.			cuota <--cuota * 2.5
-34.			extra = cuota * horas_extra
-35.			valorTotal= subtotal + extra
+34.			extra <-- cuota * horas_extra
+35.			valorTotal<-- subtotal + extra
 36.		De lo contario
 37.			Si(tipo==4) entonces
 38.				cuota <-- cuota * 3
-39.				extra = cuota * horas_extra
-40.				valorTotal= subtotal + extra
+39.				extra <-- cuota * horas_extra
+40.				valorTotal<-- subtotal + extra
 41.			De lo contrario
-42.				valorTotal= subtotal
+42.				valorTotal<-- subtotal
 43.			Fin Si
 44.		Fin Si
 45.	Fin Si

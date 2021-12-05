@@ -30,7 +30,7 @@ Problema04
 9.>>numero2
 
 10.<<"Ingresar el tercer número"
-11.>>nuemro3
+11.>>nuemero3
 
 12.Si (numero1 == numero2) or (numero1 == numero3) or (numero2 == numero3) entoces
 13.	<<"Valores incorrectos"
@@ -38,15 +38,15 @@ Problema04
 14.Fin Si
 
 15.Si (numero1 > numero2) and (numero1>numero3)entoces
-16.	mayor = numero1
+16.	mayor <-- numero1
 
 17.De lo contrario
 18.	Si (numero2 > numero1) and (numero2>numero3)entoces
-19.		mayor = numero2
+19.		mayor <-- numero2
 
 20.	De lo contrario
 21.		Si (numero3 > numero1) and (numero3 >numero1)entoces
-22.			mayor = numero3
+22.			mayor <-- numero3
 23.		Fin Si
 24.	Fin Si
 25.Fin Si
