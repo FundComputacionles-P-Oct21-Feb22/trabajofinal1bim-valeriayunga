@@ -33,7 +33,7 @@ roblema04
 9.	cadena <-- cadena + "+" numerador + " " + "/" +" "+ denominador
 10.	denominador <-- denominador + 1  
 
-11. Fin Haga_Hasta (denominador >= 100)
+11. Fin Haga_Hasta (denominador <= 100)
 
 12. <<"Serie :"+ cadena
 13.<<"Suma total de la serie:"+ suma

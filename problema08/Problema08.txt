@@ -1,0 +1,35 @@
+Problema08
+
+1.Inicio
+
+
+2.limite, d [0, n]
+3.tarta, d [0, n]
+4.pulgadas, d [0, n]
+5.tartas, d [0, n]
+6.metro, d [0, n] 
+7.cadena, d [0, n] <--""
+8.contador , d [0, n] <--1
+
+9.<<"Ingrese el límite de la tabla"
+10.>>limite
+
+11.tarta <-- 12 // pulgadas 
+12.yarda <-- 3 //tartas 
+13.pulgada <-- 2.54 //cm 
+14.metro <-- 100  //cm
+
+15.Mientras (contador  <= limite) entonces
+
+16.     yarda <-- (((pulgada / metro) / tarta) / yarda)
+17.	pulgada <-- (pulgada / metro)
+18.     tarta <-- ((pulgada / metro) / tarta)
+29.	metro <-- metro + 100
+
+
+20.	cadena <-- cadena + "Metro:" + contador+ "Yardas:" +yarda+ "Pulgada:"+pulgada, "Tarta" + tarta
+21.	contador <-- contador + 1
+22.Fin Mientras
+
+23.<<cadena
+24.Fin
