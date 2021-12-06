@@ -2,9 +2,9 @@ Pregunta07
 
 1.Inicio
 
-2.par_ingresado, d[0-n]
-3.conatador, d[0-n] <--2
-4.numero, d[0-n] <--2
+2.par_ingresado, i[0-n]
+3.conatador, i[0-n] <--2
+4.numero, i[0-n] <--2
 5.<<"Ingrese un número par mayor a 2"
 6.>>par_ingresado
 

@@ -6,21 +6,21 @@ Problema09
 2.limite, i [0, n]<-- 44
 3.numero1, i [0, n]<-- 12
 4.numero2, i [0, n]<-- 11
-5.contador1, i [0, n] <-- 0
-6.contador2, i [0, n] <-- 0
-7.cadena, x(1000)[{0-9},{-,+, BS, /}] <-- ""
 
-8.Haga_Hasta
-9.	 contador1 <-- contador1 +1
-10.       contador2<-- contador2 +1
-11.      numero1 <-- numero1*contador1
-12.      numero2 <-- numero2*contador2
+5.cadena, x(1000)[{0-9},{-,+, BS, /}] <-- ""
+
+6.Haga_Hasta
 	
-13.	cadena <-- cadena + numero1 + numero2
-14.	suma <-- numero1 + numero2
+7.	cadena <-- cadena + numero1 +"-"+ numero2 
+8.	 
+9.      numero1 <-- numero1+12
+10.      numero2 <-- numero2+11
+	
+11.	cadena <-- cadena + numero1 - numero2
+12.	suma <-- numero1 + numero2
 
-15.Fin Haga _Hasta (numero <= limite)
+13.Fin Haga _Hasta (numero <= limite)
 
-16.<<"S1 =" + cadena
-17.<<suma
-18.Fin
+14.<<"S1 =" + cadena
+15.<<suma
+16.Fin
