@@ -8,7 +8,7 @@ Problema08
 4.pulgadas, d [0, n]
 5.tartas, d [0, n]
 6.metro, d [0, n] 
-7.cadena, d [0, n] <--""
+7.cadena, x(1000)[{0-9},{-,+, BS, /}] <--""
 8.contador , d [0, n] <--1
 
 9.<<"Ingrese el límite de la tabla"

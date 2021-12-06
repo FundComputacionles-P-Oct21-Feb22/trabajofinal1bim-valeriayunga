@@ -8,18 +8,19 @@ Problema09
 4.numero2, i [0, n]<-- 11
 5.contador1, i [0, n] <-- 0
 6.contador2, i [0, n] <-- 0
+7.cadena, x(1000)[{0-9},{-,+, BS, /}] <-- ""
 
-7.Haga_Hasta
-8.	 contador1 <-- contador1 +1
-9.       contador2<-- contador2 +1
-10.      numero1 <-- numero1*contador1
-11.      numero2 <-- numero2*contador2
+8.Haga_Hasta
+9.	 contador1 <-- contador1 +1
+10.       contador2<-- contador2 +1
+11.      numero1 <-- numero1*contador1
+12.      numero2 <-- numero2*contador2
 	
-12.	cadena <-- cadena + numero1 + numero2
-13.	suma <-- numero1 + numero2
+13.	cadena <-- cadena + numero1 + numero2
+14.	suma <-- numero1 + numero2
 
-14.Fin Haga _Hasta (numero <= limite)
+15.Fin Haga _Hasta (numero <= limite)
 
-15.<<"S1 =" + cadena
-16.<<suma
-17.Fin
+16.<<"S1 =" + cadena
+17.<<suma
+18.Fin

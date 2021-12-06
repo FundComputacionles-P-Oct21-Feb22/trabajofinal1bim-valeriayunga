@@ -1,0 +1,54 @@
+Pregunta10
+//algoritmo
+
+1.Inicio
+//Entradas
+2.Se ingresan los datos que el usuario desee
+
+//Procesos
+3.Se usa el bucle Haga_Hasta para que el usuario pueda ingregar la cantidad
+  de números que desse, estos además se acumulan hasta que el ciclo termine,
+  y se suman, para encontra la media.
+4.Se usa la formula (1/(n-1))*(∑xi-1)/(n*(n-1))*(∑xi)² , para encontar la 
+  varianza. 
+
+//Salida
+5.Se presenta en pantalla la media y la varianza
+6.Fin
+
+//miniespecificación
+
+1.Inicio
+2.dato, d[0-n]
+3.suma,d[0-n] <-- 0
+4.acumulador, d[0-n] <--0
+5.media, d[0-n]
+6.acMedia2, d[0-n]<--0
+7.varianza , d[0-n]
+8.n, i[0-n] <-- 1
+9.salida, x(5)[{A-Z}{a-z}{BS}]
+10.cadena, x(1000)[{0-9},{-,+, BS, /}] <-- ""
+
+11.Haga_Hasta
+
+12.<<"Ingrese datos"
+13.>>dato
+
+14.suma <-- suma + dato
+15.acumulador <-- acumulador + 1
+16.cadena <-- cadena + dato
+17.acMedia2 <-- acMedia2 + dato * dato
+18.n++
+
+19.<<"Si desea salir del ciclo, ingrese (si)"
+20.>>salida
+
+21.Fin Haga_Hasta (salida!="si")
+
+
+22.media <-- suma / acumulador
+23.varianza <-- acMedia2 / (n – 1) – (suma * suma) / (n * (n – 1))
+
+24.<<"La media es:" + media
+25.<<"La varianza es:" + varianza
+26.Fin
